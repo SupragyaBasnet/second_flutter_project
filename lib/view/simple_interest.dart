@@ -33,8 +33,6 @@ class _SimpleInterestViewState extends State<SimpleInterestView> {
                 decoration: InputDecoration(
                   labelText: 'Enter Principal Amount',
                   border: OutlineInputBorder(), // Adds box around input
-                  filled: true, // Fills the background
-                  fillColor: Colors.grey[200], // Light grey background color
                 ),
                 onChanged: (value) {
                   setState(() {
@@ -51,8 +49,6 @@ class _SimpleInterestViewState extends State<SimpleInterestView> {
                 decoration: InputDecoration(
                   labelText: 'Enter Rate of Interest',
                   border: OutlineInputBorder(), // Adds box around input
-                  filled: true, // Fills the background
-                  fillColor: Colors.grey[200], // Light grey background color
                 ),
                 onChanged: (value) {
                   setState(() {
@@ -69,8 +65,6 @@ class _SimpleInterestViewState extends State<SimpleInterestView> {
                 decoration: InputDecoration(
                   labelText: 'Enter Time (years)',
                   border: OutlineInputBorder(), // Adds box around input
-                  filled: true, // Fills the background
-                  fillColor: Colors.grey[200], // Light grey background color
                 ),
                 onChanged: (value) {
                   setState(() {

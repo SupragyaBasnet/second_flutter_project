@@ -30,8 +30,6 @@ class _AreaOfCircleViewState extends State<AreaOfCircleView> {
                 decoration: InputDecoration(
                   labelText: 'Enter Radius',
                   border: OutlineInputBorder(), // Adds box around input
-                  filled: true, // Fills the background
-                  fillColor: Colors.grey[200], // Light grey background color
                 ),
                 onChanged: (value) {
                   setState(() {

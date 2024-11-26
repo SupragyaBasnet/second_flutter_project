@@ -21,37 +21,49 @@ class Dashboard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment
                 .center, // This centers the buttons horizontally as well
             children: [
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const ArithmeticView()),
-                  );
-                },
-                child: const Text('Arithmetic'),
+              SizedBox(
+                width: double
+                    .infinity, // This makes the button expand to the full width
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const ArithmeticView()),
+                    );
+                  },
+                  child: const Text('Arithmetic'),
+                ),
               ),
               const SizedBox(height: 20),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const SimpleInterestView()),
-                  );
-                },
-                child: const Text('Simple Interest'),
+              SizedBox(
+                width: double
+                    .infinity, // This makes the button expand to the full width
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const SimpleInterestView()),
+                    );
+                  },
+                  child: const Text('Simple Interest'),
+                ),
               ),
               const SizedBox(height: 20),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const AreaOfCircleView()),
-                  );
-                },
-                child: const Text('Area of Circle'),
+              SizedBox(
+                width: double
+                    .infinity, // This makes the button expand to the full width
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const AreaOfCircleView()),
+                    );
+                  },
+                  child: const Text('Area of Circle'),
+                ),
               ),
             ],
           ),
