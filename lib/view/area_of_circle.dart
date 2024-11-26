@@ -27,7 +27,7 @@ class _AreaOfCircleViewState extends State<AreaOfCircleView> {
               TextField(
                 controller: radiusController,
                 keyboardType: TextInputType.number,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   labelText: 'Enter Radius',
                   border: OutlineInputBorder(), // Adds box around input
                 ),
