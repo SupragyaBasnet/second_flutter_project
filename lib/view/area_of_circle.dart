@@ -23,11 +23,15 @@ class _AreaOfCircleViewState extends State<AreaOfCircleView> {
           padding: const EdgeInsets.all(8),
           child: Column(
             children: [
+              // Radius Input Field with Box
               TextField(
                 controller: radiusController,
                 keyboardType: TextInputType.number,
-                decoration: const InputDecoration(
+                decoration: InputDecoration(
                   labelText: 'Enter Radius',
+                  border: OutlineInputBorder(), // Adds box around input
+                  filled: true, // Fills the background
+                  fillColor: Colors.grey[200], // Light grey background color
                 ),
                 onChanged: (value) {
                   setState(() {
@@ -36,8 +40,12 @@ class _AreaOfCircleViewState extends State<AreaOfCircleView> {
                 },
               ),
               const SizedBox(height: 8),
+
+              // Displaying Area Value
               Text('Area: $area', style: const TextStyle(fontSize: 18)),
               const SizedBox(height: 8),
+
+              // Calculate Area Button
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(

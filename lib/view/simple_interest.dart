@@ -26,11 +26,15 @@ class _SimpleInterestViewState extends State<SimpleInterestView> {
           padding: const EdgeInsets.all(8),
           child: Column(
             children: [
+              // Principal Input Field with Box
               TextField(
                 controller: principalController,
                 keyboardType: TextInputType.number,
-                decoration: const InputDecoration(
+                decoration: InputDecoration(
                   labelText: 'Enter Principal Amount',
+                  border: OutlineInputBorder(), // Adds box around input
+                  filled: true, // Fills the background
+                  fillColor: Colors.grey[200], // Light grey background color
                 ),
                 onChanged: (value) {
                   setState(() {
@@ -39,11 +43,16 @@ class _SimpleInterestViewState extends State<SimpleInterestView> {
                 },
               ),
               const SizedBox(height: 8),
+
+              // Rate of Interest Input Field with Box
               TextField(
                 controller: rateController,
                 keyboardType: TextInputType.number,
-                decoration: const InputDecoration(
+                decoration: InputDecoration(
                   labelText: 'Enter Rate of Interest',
+                  border: OutlineInputBorder(), // Adds box around input
+                  filled: true, // Fills the background
+                  fillColor: Colors.grey[200], // Light grey background color
                 ),
                 onChanged: (value) {
                   setState(() {
@@ -52,11 +61,16 @@ class _SimpleInterestViewState extends State<SimpleInterestView> {
                 },
               ),
               const SizedBox(height: 8),
+
+              // Time Input Field with Box
               TextField(
                 controller: timeController,
                 keyboardType: TextInputType.number,
-                decoration: const InputDecoration(
+                decoration: InputDecoration(
                   labelText: 'Enter Time (years)',
+                  border: OutlineInputBorder(), // Adds box around input
+                  filled: true, // Fills the background
+                  fillColor: Colors.grey[200], // Light grey background color
                 ),
                 onChanged: (value) {
                   setState(() {
@@ -65,8 +79,12 @@ class _SimpleInterestViewState extends State<SimpleInterestView> {
                 },
               ),
               const SizedBox(height: 8),
+
+              // Displaying Interest Value
               Text('Interest: $interest', style: const TextStyle(fontSize: 18)),
               const SizedBox(height: 8),
+
+              // Calculate Interest Button
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
